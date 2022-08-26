@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test01</title>
+</head>
+<body>
+    <button onclick="myFunction01()">点我查看输入的对话框</button>
+    <p id="demo01"></p>
+    <script>
+        function myFunction01(){
+            var x;
+            var person = prompt("请输入你的名字","Bluce Lee");
+            if (person!=null&person!=""){
+                x="你好"+person+"!今天感觉如何？";
+                document.getElementById("demo01").innerHTML=x;
+            }
+        }
+    </script>
+</body>
+</html>
